@@ -26,6 +26,7 @@
 body {
     margin: 0 auto;
     padding: 0;
+    letter-spacing: -1px;
 }
 
 html {
@@ -318,7 +319,7 @@ form {
 }
 
 .form_title {
-    max-width: 269px;
+    max-width: 239px;
     max-height: 50px;
     overflow: hidden;
     box-sizing: border-box;
@@ -2013,20 +2014,6 @@ form {
     cursor: pointer;
 }
 
-.owl-carousel {
-    display: flex;
-    /* Использовать flex для центрирования */
-    justify-content: center;
-    /* Центрировать содержимое */
-}
-
-.owl-prev {
-    left: -30px;
-}
-
-.owl-next {
-    right: -30px;
-}
 
 .comment_item {
     max-width: 363px;
@@ -2267,6 +2254,8 @@ form {
     .medallions img {
         max-width: 100%;
         max-height: 100%;
+        top: 4%;
+        right: 4%;
         object-fit: cover;
         position: relative;
         animation: rotate 8s ease-in-out infinite;
@@ -2293,9 +2282,10 @@ form {
     }
 
     .medallions span:first-of-type {
-        top: 50px;
+        top: 55px;
+        right: 5px;
         font-family: 'Geometria_ExtraBold';
-        font-size: 22px;
+        font-size: 18px;
         color: #236BF3;
         text-decoration: line-through;
         opacity: 60%;
@@ -2303,8 +2293,9 @@ form {
 
     .medallions span:last-of-type {
         bottom: 80px;
+        right: 5px;
         font-family: 'Geometria_ExtraBold';
-        font-size: 32px;
+        font-size: 30px;
         color: #236BF3;
     }
 
@@ -2314,7 +2305,7 @@ form {
     }
 
     .form_title {
-        max-width: 230px;
+        max-width: 200px;
         max-height: 50px;
         overflow: hidden;
         box-sizing: border-box;
@@ -2789,8 +2780,9 @@ form {
     }
 
     .bl_4_medallions img {
-        max-width: 100%;
-        max-height: 100%;
+        top: 6%;
+        max-width: 90%;
+        max-height: 90%;
         object-fit: cover;
         position: relative;
         animation: rotate 8s ease-in-out infinite;
@@ -2952,7 +2944,6 @@ form {
 
 
     .bl_6 {
-        width: 100vw;
         margin-top: 150px;
         margin-bottom: 150px;
         height: 440px;
@@ -3560,13 +3551,6 @@ form {
 
     /* SECTION 11 */
 
-    .owl-carousel {
-        display: flex;
-        /* Использовать flex для центрирования */
-        justify-content: center;
-        /* Центрировать содержимое */
-    }
-
     .bl_11 {
         max-width: 1024px;
         max-height: 658px;
@@ -3600,7 +3584,7 @@ form {
     .comment_3 {
         max-width: 363px;
         width: 100%;
-        height: 538px;
+        height: 508px;
         padding: 24px;
         background-color: #eef3f6;
         border-radius: 24px;
@@ -4029,7 +4013,7 @@ form {
         margin-top: -5px;
         padding: 24px 16px;
         position: relative;
-        height: 500px;
+        height: 100%;
     }
 
     .sec_2_top {
@@ -4086,7 +4070,8 @@ form {
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        width: 327px;
+        width: 328px;
+        /* margin: 0 16px; */
     }
 
     .sec_2_form span {
@@ -4097,14 +4082,14 @@ form {
         font-family: 'Geometria_Bold';
         font-size: 20px;
         color: #236BF3;
+        margin-top: 74px;
         margin-bottom: 24px;
-        width: 250px;
+        max-width: 250px; 
     }
 
     .sec_2_form input {
         border-radius: 16px;
-        padding: 10px 14px;
-        width: 310px;
+        padding: 12px 24px;
         margin: 10px;
         border: none;
     }
@@ -4115,47 +4100,47 @@ form {
         color: #236BF3;
     }
 
-    .form_info_2 {
+    .sec_2_form .form_info_2 {
         margin-top: 24px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-
+        width: 100%;
     }
 
-    .info_item{
+    .sec_2_form .info_item{
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
     }
 
-    .info_item p{
+    .sec_2_form .info_item p{
         font-family: 'Geometria_Medium';
-        font-size: 11px;
+        font-size: 12px;
         color: #236BF3;
         text-align: left;
     }
 
-    .info_item img{
+    .sec_2_form .info_item img{
         width: 24px;
         height: 24px;
         margin: 0;
         margin-right: 8px;
     }
 
-    .form_info_2 button {
-        align-self: flex-start;
-        width: 340px;
+    .sec_2_form .form_info_2 button {
+
+        width: 100%;
         height: 40px;
+        margin: 0 auto;
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 14px;
         background-color: #236BF3;
         color: #fff;
-        margin-left: -14px;
-        margin-top: 35px;
+        margin-top: 24px;
         border: none;
         border-radius: 16px;
         cursor: pointer;
@@ -4167,7 +4152,7 @@ form {
 
     .sec_3 {
         background-color: #DAE6F4;
-        padding: 24px 12px;
+        padding: 84px 12px 24px 12px;
     }
 
     .sec_3 p {
@@ -4365,12 +4350,15 @@ form {
         right: 27px;
     }
 
+    .sec_5_form{
+        padding: 16px;
+    }
+
     .form_info_5 {
         margin-top: 24px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-
     }
 
     .info_item{
@@ -4380,16 +4368,21 @@ form {
         align-items: center;
     }
 
-    .info_item p{
+    .info_item span{
         font-family: 'Geometria_Medium';
-        font-size: 11px;
-        color: #236BF3;
+        font-size: 12px;
+        color: #fff;
         text-align: left;
+    }
+
+    .form_info_5 .info_item:nth-child(-n+2){
+        margin-bottom: 8px;
     }
 
     .info_item img{
         width: 24px;
         height: 24px;
+        padding: 0;
         margin: 0;
         margin-right: 8px;
     }
@@ -5071,7 +5064,7 @@ form {
     }
 
     .sec_14_form {
-        padding: 16px;
+        padding: 16px 16px 60px 16px;
     }
 
     .sec_14_form span {
@@ -5302,6 +5295,8 @@ form {
 }
 
 .bl_4_medallions img {
+    top: 2%;
+    right: 4%;
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
@@ -5330,9 +5325,10 @@ form {
 }
 
 .bl_4_medallions span:first-of-type {
-    top: 60px;
+    top: 55px;
+    right: 5px;
     font-family: 'Geometria_ExtraBold';
-    font-size: 24px;
+    font-size: 20px;
     color: #236BF3;
     text-decoration: line-through;
     opacity: 60%;
@@ -5340,8 +5336,9 @@ form {
 
 .bl_4_medallions span:last-of-type {
     bottom: 60px;
+    right: 5px;
     font-family: 'Geometria_ExtraBold';
-    font-size: 36px;
+    font-size: 30px;
     color: #236BF3;
 }
 
@@ -5465,7 +5462,7 @@ form {
 
 
 .bl_6 {
-    width: 100vw;
+    /* width: 100vw; */
     margin-top: 150px;
     margin-bottom: 150px;
     height: 440px;
@@ -5607,7 +5604,7 @@ form {
 /* SECTION 8 */
 
 .bl_8 {
-    width: 100vw;
+    /* width: 100vw; */
     margin-top: -4px;
     background-color: #236BF3;
     padding: 50px 0;
@@ -5879,8 +5876,10 @@ form {
 }
 
 .bl_9_medallions img {
-    max-width: 100%;
-    max-height: 100%;
+    top: 6%;
+    left: 7%;
+    max-width: 90%;
+    max-height: 90%;
     object-fit: cover;
     position: relative;
     animation: rotate 8s ease-in-out infinite;
@@ -5908,8 +5907,9 @@ form {
 
 .bl_9_medallions span:first-of-type {
     top: 60px;
+    left: 15px;
     font-family: 'Geometria_ExtraBold';
-    font-size: 24px;
+    font-size: 20px;
     color: #236BF3;
     text-decoration: line-through;
     opacity: 60%;
@@ -5917,8 +5917,9 @@ form {
 
 .bl_9_medallions span:last-of-type {
     bottom: 60px;
+    left: 15px;
     font-family: 'Geometria_ExtraBold';
-    font-size: 36px;
+    font-size: 30px;
     color: #236BF3;
 }
 
@@ -6073,12 +6074,7 @@ form {
 
 /* SECTION 11 */
 
-.owl-carousel {
-    display: flex;
-    /* Использовать flex для центрирования */
-    justify-content: center;
-    /* Центрировать содержимое */
-}
+
 
 .bl_11 {
     max-width: 1024px;
@@ -6113,7 +6109,7 @@ form {
 .comment_3 {
     max-width: 363px;
     width: 100%;
-    height: 538px;
+    height: 478px;
     padding: 24px;
     background-color: #eef3f6;
     border-radius: 24px;
@@ -6212,8 +6208,9 @@ form {
 /* SECTION 14 */
 
 .bl_14_box {
-    max-width: 1340px;
+    max-width: 1240px;
     display: flex;
+    margin: 0 auto;
     justify-content: space-between;
     align-items: center;
 
@@ -6373,8 +6370,10 @@ form {
 }
 
 .bl_14_medallions img {
-    max-width: 100%;
-    max-height: 100%;
+    top: 6%;
+    left: 7%;
+    max-width: 90%;
+    max-height: 90%;
     object-fit: cover;
     position: relative;
     animation: rotate 8s ease-in-out infinite;
@@ -6401,18 +6400,20 @@ form {
 }
 
 .bl_14_medallions span:first-of-type {
-    top: 60px;
+    top: 63px;
+    left: 13px;
     font-family: 'Geometria_ExtraBold';
-    font-size: 24px;
+    font-size: 20px;
     color: #236BF3;
     text-decoration: line-through;
     opacity: 60%;
 }
 
 .bl_14_medallions span:last-of-type {
-    bottom: 60px;
+    bottom: 65px;
+    left: 13px;
     font-family: 'Geometria_ExtraBold';
-    font-size: 36px;
+    font-size: 30px;
     color: #236BF3;
 }
 
@@ -7153,5 +7154,33 @@ form {
 @media screen and (max-width: 769px) {
     .bl_3 {
         margin: 450px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .bl_14_box{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+.animate_map {
+    display: block; /* или другой нужный стиль */
+}
+
+.map-image {
+    content: url('../img/map.png');
+}
+
+/* Медиа-запрос для экранов 924px и меньше */
+@media (max-width: 924px) {
+    .animate_map {
+        display: none; /* Скрываем элементы с классом animate_map */
+    }
+    
+    .map-image {
+        content: url('../img/map_1.png'); /* Заменяем изображение карты */
     }
 }
