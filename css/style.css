@@ -1579,6 +1579,9 @@ form {
     max-width: 1024px;
     max-height: 658px;
     margin: 110px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .bl_11_box {
@@ -1600,30 +1603,33 @@ form {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 60px;
+    gap: 60px; /* Main spacing between comments */
+    margin: 0 5%;
 }
 
+/* Styles for comment cards */
 .comment_1,
 .comment_2,
 .comment_3 {
     max-width: 363px;
     width: 100%;
     height: 508px;
-    padding: 24px;
+    padding: 24px; /* Consistent padding for all comments */
     background-color: #eef3f6;
     border-radius: 24px;
 }
 
+/* Styles for the name section */
 .comment_name {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 24px;
+    margin-bottom: 24px; /* Spacing below name */
 }
 
 .comment_name img {
-    margin-right: 10px;
-    border-radius: 48px;
+    margin-right: 10px; /* Spacing between image and name */
+    border-radius: 50%; /* Make image circular */
     max-width: 60px;
     max-height: 60px;
 }
@@ -1634,11 +1640,43 @@ form {
     color: #236BF3;
 }
 
+/* Styles for the comment text */
 .comment_text {
     font-family: 'Geometria_Italic';
     font-size: 16px;
     color: #236BF3;
 }
+
+/* Responsive styles for medium-sized screens */
+@media (max-width: 1050px) and (min-width: 768px) {
+    .comments {
+        overflow-x: auto; /* Enable horizontal scrolling */
+        scroll-snap-type: x mandatory; /* Snap scrolling effect */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
+        gap: 20px; /* Adjust gap for smaller screens */
+        padding: 10px 0; /* Top and bottom padding */
+        justify-content: flex-start; /* Start aligning comments */
+    }
+
+    .comment_1, .comment_2, .comment_3 {
+        scroll-snap-align: start; /* Snap alignment for cards */
+        flex: 0 0 400px; /* Set width to 400px */
+        max-width: 400px; /* Ensure maximum width */
+        max-height: 450px;
+        width: 100%; /* Full width of the container */
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .bl_11 {
+        display: none; /* Hide this section on smaller screens */
+    }
+    .sec_11 {
+        display: block; /* Show the alternative section */
+    }
+}
+
 
 
 /* SECTION 12 */
@@ -1747,7 +1785,7 @@ form {
     font-family: 'Geometria_Medium';
     font-size: 24px;
     color: #236BF3;
-    max-width: 263px;
+    max-width: 243px;
     max-height: 120px;
 }
 
@@ -2439,6 +2477,7 @@ form {
         right: -50px;
         width: 130px;
         height: 130px;
+        
         object-fit: cover;
         z-index: 1;
     }
@@ -3659,7 +3698,7 @@ form {
         font-family: 'Geometria_Medium';
         font-size: 20px;
         color: #236BF3;
-        max-width: 263px;
+        max-width: 243px;
         max-height: 120px;
     }
 
@@ -4858,49 +4897,66 @@ form {
 
     /* SECTION 11 */
 
-    .sec_11{
+    .sec_11 {
         margin-top: 48px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        width: 100%; /* Занимаем всю доступную ширину */
     }
-
-    .sec_11 span{
+    
+    .content {
+        display: flex;
+        overflow-x: auto; /* Включаем горизонтальную прокрутку */
+        scroll-snap-type: x mandatory; /* Принудительное выравнивание по элементам */
+        gap: 10px; /* Расстояние между карточками */
+        padding: 0; /* Убираем отступы внутри контейнера */
+        width: 360px; /* Ширина родительского контейнера */
+        -webkit-overflow-scrolling: touch; /* Плавная прокрутка на мобильных устройствах */
+    }
+    
+    .sec_11_slider {
+        min-width: 360px; /* Фиксированная ширина карточки */
+        scroll-snap-align: start; /* Привязка к началу карточки */
+        padding: 16px;
+        background-color: #eef3f6;
+        border-radius: 24px;
+        box-sizing: border-box; /* Учет отступов и границ в ширине */
+    }
+    
+    .sec_11 span {
         font-family: 'Geometria_Medium';
         font-size: 32px;
         color: #236BF3;
         text-align: center;
     }
-
-    .sec_11_slider{
-        padding: 16px;
-        background-color: #eef3f6;
-        border-radius: 24px;
-    }
-
-    .sec_11_slider div{
+    
+    .sec_11_slider div {
         display: flex;
         flex-direction: row;
         align-items: center;
         margin-bottom: 16px;
     }
-
-    .sec_11_slider div img{
+    
+    .sec_11_slider div img {
         margin-right: 8px;
     }
-
-    .sec_11_slider div span{
+    
+    .sec_11_slider div span {
         font-family: 'Geometria_Bold';
         font-size: 16px;
         color: #236BF3;
     }
-
-    .sec_11_slider span{
+    
+    .sec_11_slider span {
         font-family: 'Geometria_Italic';
         font-size: 14px;
         color: #236BF3;
     }
+    
+    
+    
 
     /* SECTION 12 */
 
@@ -5470,6 +5526,7 @@ form {
 
 .bl_6_box {
     display: flex;
+    width: 98.8vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -5848,7 +5905,7 @@ form {
 }
 
 .bl_9_left-part button:hover {
-    background-color: #EAB226;
+    background-color: #236BF3;
 }
 
 .bl_9_form {
@@ -6109,7 +6166,7 @@ form {
 .comment_3 {
     max-width: 363px;
     width: 100%;
-    height: 478px;
+    height: 508px;
     padding: 24px;
     background-color: #eef3f6;
     border-radius: 24px;
@@ -6184,7 +6241,7 @@ form {
     font-family: 'Geometria_Medium';
     font-size: 20px;
     color: #236BF3;
-    max-width: 263px;
+    max-width: 243px;
     max-height: 120px;
 }
 
@@ -6342,7 +6399,7 @@ form {
 }
 
 .bl_14_left-part button:hover {
-    background-color: #EAB226;
+    background-color: #236BF3;
 }
 
 .bl_14_form {
