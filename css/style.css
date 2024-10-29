@@ -5934,7 +5934,6 @@ form {
 
 .bl_9_medallions img {
     top: 6%;
-    left: 7%;
     max-width: 90%;
     max-height: 90%;
     object-fit: cover;
@@ -5964,7 +5963,7 @@ form {
 
 .bl_9_medallions span:first-of-type {
     top: 60px;
-    left: 15px;
+    /* left: 15px; */
     font-family: 'Geometria_ExtraBold';
     font-size: 20px;
     color: #236BF3;
@@ -5974,7 +5973,7 @@ form {
 
 .bl_9_medallions span:last-of-type {
     bottom: 60px;
-    left: 15px;
+    /* left: 15px; */
     font-family: 'Geometria_ExtraBold';
     font-size: 30px;
     color: #236BF3;
