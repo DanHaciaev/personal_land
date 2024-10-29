@@ -7191,6 +7191,27 @@ form {
         flex-direction: column-reverse;
         flex: 0 0 auto;
     }
+
+    .bl_8_card_1 img{
+        content: url('../img/image\ 163.png');
+        width: 100%;
+    }
+
+    .bl_8_card_2 img{
+        content: url('../img/image\ 166.png');
+        width: 100%;
+    }
+
+    .bl_8_card_3 img{
+        content: url('../img/image\ 164.png');
+        width: 100%;
+    }
+
+    .bl_8_card_4 img{
+        content: url('../img/image\ 165.png');
+        width: 100%;
+    }
+
     .bl_9_box{
         flex-direction: column;
     }
@@ -7239,4 +7260,9 @@ form {
     .map-image {
         content: url('../img/map_1.png'); /* Заменяем изображение карты */
     }
+}
+
+@media screen and (max-width: 919px) {
+
+    
 }
